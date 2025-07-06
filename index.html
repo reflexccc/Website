@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinzenz Krüger</title>
+  <style>
+    :root{
+      --bg-dark: hsl(0 0% 0%);
+      --bg: hsl(0 0% 10%);
+      --bg-light: hsl(0 0% 20%);
+      --text: hsl(0 0% 95%);
+      --text-muted: hsl(0 0% 75%);
+      --link: hsl(232, 44%, 50%);
+      --border: hsl(0 0% 50%);
+      --shadow: 1px 1px 3px hsla(0, 0%, 60%, 0.93), 3px 3px 3px hsla(0, 0%, 50%, 0.85);
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-muted);
+      float: left;
+    }
+    header {
+      background: var(--bg-dark);
+      color: var(--text);
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+    button {
+      background: var(--bg);
+      color: var(--text);
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      border: solid 1px var(--border);
+    }
+    section {
+      max-width: 75%;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: var(--bg);
+      border-radius: 8px;
+      border: solid 1px var(--border);
+
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    a {
+      color: var(--link);
+    }
+
+    h2 {
+      color: var(--text);
+      font-size: 32px;
+    }
+    h3 {
+      color: var(--text);
+      font-size: 26px;
+      padding: 0;
+    }
+    h4 {
+      color: var(--text);
+      font-size: 22px;
+    }
+    img {
+      max-width: 90%;
+      object-fit: cover;
+      margin: auto;
+      border-radius: 4px;
+      box-shadow: var(--shadow);
+    }
+    .hidden {
+      display: none;
+    }
+
+    .side-by-side{
+      display: flex;
+      gap: 20px;
+      padding: 5px;
+      width: 90%;
+      margin: auto;
+    }
+
+    .text{
+      display: block;
+      max-width: 45%;
+      font-size: 19px;
+      margin: 0px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Sponsorenmappe</h1>
+  </header>
+
+  <nav>
+    <button onclick="showVersion('english')">English</button>
+    <button onclick="showVersion('deutsch')">Deutsch</button>
+  </nav>
+
+  <!-- Version 1 -->
+  <div id="english" class="content">
+    <section>
+      <img src="start.jpg">
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+          <h2>About Me</h2>
+          <p>I'm Vinzenz Krüger, 15 years old, and passionate downhill racer. 
+          I've pretty much grown up riding bikes. Just 2 years ago I discovered racing and have been loving that aspect of biking ever since. 
+          I've also already been able to gather quite a few trophies.
+          When I'm not riding, I work as martial arts trainer to finance parts of my racing.</p>
+        </div>
+        <img src="Bild_0.jpg" width="50%">
+      </div>
+      
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+          <h2>Achievements</h2>
+          <h3>2025 - U17 Pro</h3>
+          <h4>Rookies DH Cup</h3>
+          <p>Winterberg: 5th place</p>
+          <p>Oberhof: 1st place</p>
+          <h4>IXS DH Cup</h3>
+          <p>Winterberg: 2nd place</p>
+
+          <h3>2024 - U17</h3>
+          <h4>Rookies DH Cup</h4>
+          <p>Overall: 2nd place</p>
+          <p>Oberhof: 1st place</p>
+          <p>Saalbach: 3rd place</p>
+          <p>Schladming: 6th place</p>
+        
+          <h3>2023 - U15</h3>
+          <p>Treuchtlingen Enduro: 1st place</p>
+        </div>
+        <img src="Bild_1.jpg" width=66%>
+      </div>
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+          <h2>Goals for 2025</h2>
+          <p>- Top 5 overall in the IXS Downhill Cup</p>
+          <p>- Taking part in at least 2 European Downhill Cups</p>
+          <p>- Growing my social media</p>
+        </div>
+        <img src="Bild_2.jpg" width=50%>
+      </div>
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+          <h2>How Do I Reach My Goals?</h2>
+          <p>- Getting a Downhill-Bike</p>
+          <p>- Race oriented DH sessions</p>
+          <p>- Specific endurance- and powertraining</p>
+          <p>- Riding a lot and having fun!!!</p>
+        </div>
+        <img src="Bild_3.jpg" width=50%>
+      </div>
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+          <h2>What Can I Offer?</h2>
+          <p>- Presence in the german DH-scene</p>
+          <p>- Advertisement through…</p>
+          <p>   …my race-kits</p>
+          <p>   …good results at races</p>
+          <p>   …social media</p>
+          <p>   …photos and videos</p>
+        </div>
+        <img src="Bild_4.jpg" width="50%">
+      </div>
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+        <h2>Contact</h2>
+        <p>vinzenzkrueger@gmx.de</p>
+        <h3>Social Media</h3>
+        <p><a href="https://instagram.com/vinzenz_kruger">Instagram</a></p>
+        <p><a href="https://youtube.com/@vinzenzkruger2394">Youtube</a></p>
+        <p><a href="https://www.tiktok.com/@vinzenz_kruger">Tiktok</a></p>
+        </div>
+        <img src="ich.jpg" width="25%">
+      </div>
+    </section>
+
+    <section>
+      <div class="text">
+          <h2>Riding for</h2>
+          <p>Commencal Co-Factory</p>
+          <p>Raceteam Bikepark Samerberg</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Version 2 (identisch, kann später angepasst werden) -->
+  <div id="deutsch" class="content hidden">
+    <section>
+      <img src="start.jpg">
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+          <h2>Über mich</h2>
+          <p>Ich bin Vinzenz Krüger, 15 Jahre alt, und ambitionierter Downhill-Rennfahrer. 
+              Ich bin quasi auf dem Bike aufgewachsen und habe vor zwei Jahren Downhill-Rennen für mich entdeckt. 
+              Seitdem fahre ich regelmäßig Rennen und konnte schon einige Trophäen ergattern. 
+              Wenn ich nicht auf dem Bike sitze, engagiere ich mich als Kampfsport-Trainer, um mir meine Lifttickets zu verdienen.</p>
+        </div>
+        <img src="Bild_0.jpg" width=50%>
+      </div>
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+          <h2>Erfolge</h2>
+          <h3>2025 - U17 Pro</h3>
+          <h4>Rookies DH Cup</h3>
+          <p>Winterberg: 5. Platz</p>
+          <p>Oberhof: 1. Platz</p>
+          <h4>IXS DH Cup</h3>
+          <p>Winterberg: 2. Platz</p>
+
+          <h3>2024 - U17</h3>
+          <h4>Rookies DH Cup</h4>
+          <p>Gesamtwertung: 2. Platz</p>
+          <p>Oberhof: 1. Platz</p>
+          <p>Saalbach: 3. Platz</p>
+          <p>Schladming: 6. Platz</p>
+        
+          <h3>2023 - U15</h3>
+          <p>Treuchtlingen Enduro: 1. Platz</p>
+        </div>
+        <img src="Bild_1.jpg" width=66%>
+      </div>
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+          <h2>Ziele für 2025</h2>
+          <p>- Top 5 in der Gesamtwertung des IXS Downhill Cup</p>
+          <p>- Teilnahme an mind. 2 EDCs</p>
+          <p>- Meine Reichweite in den sozialen Netzwerken ausbauen</p>
+        </div>
+        <img src="Bild_2.jpg" width=50%>
+      </div>
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+          <h2>Wie erreiche ich meine Ziele?</h2>
+          <p>- Auf Downhill-Bike umsteigen</p>
+          <p>- Renn-orientiertes Downhilltraining</p>
+          <p>- Ausdauer- und Krafttraining</p>
+          <p>- Viel fahren und Spaß haben!!!</p>
+        </div>
+        <img src="Bild_3.jpg" width="50%">
+      </div>
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+          <h2>Was habe ich zu bieten?</h2>
+          <p>- Präsenz in der deutschen DH-Szene</p>
+          <p>- Werbung durch…</p>
+          <p>   …meine Rennklamotten</p>
+          <p>   …gute Rennergebnisse</p>
+          <p>   …soziale Netzwerke</p>
+          <p>   …Fotos und Videos</p>
+        </div>
+        <img src="Bild_4.jpg" width="50%">
+      </div>
+    </section>
+
+    <section>
+      <div class="side-by-side">
+        <div class="text">
+        <h2>Contact</h2>
+        <p>vinzenzkrueger@gmx.de</p>
+        <h3>Social Media</h3>
+        <p><a href="https://instagram.com/vinzenz_kruger">Instagram</a></p>
+        <p><a href="https://youtube.com/@vinzenzkruger2394">Youtube</a></p>
+        <p><a href="https://www.tiktok.com/@vinzenz_kruger">Tiktok</a></p>
+        </div>
+        <img src="ich.jpg" width="25%">
+      </div>
+    </section>
+
+    <section>
+      <div class="text">
+          <h2>Riding for</h2>
+          <p>Commencal Co-Factory</p>
+          <p>Raceteam Bikepark Samerberg</p>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function showVersion(id) {
+      document.getElementById('english').classList.add('hidden');
+      document.getElementById('deutsch').classList.add('hidden');
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
