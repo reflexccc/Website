@@ -1,0 +1,95 @@
+    :root{
+      --bg-dark: hsl(0 0% 0%);
+      --bg: hsl(0 0% 10%);
+      --bg-light: hsl(0 0% 20%);
+      --text: hsl(0 0% 95%);
+      --text-muted: hsl(0 0% 75%);
+      --link: hsl(232, 44%, 50%);
+      --border: hsl(0 0% 50%);
+      --shadow: 1px 1px 3px hsla(0, 0%, 60%, 0.93), 3px 3px 3px hsla(0, 0%, 50%, 0.85);
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-muted);
+      float: left;
+    }
+    header {
+      background: var(--bg-dark);
+      color: var(--text);
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+    button {
+      background: var(--bg);
+      color: var(--text);
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      border: solid 1px var(--border);
+    }
+    section {
+      max-width: 75%;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: var(--bg);
+      border-radius: 8px;
+      border: solid 1px var(--border);
+
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    a {
+      color: var(--link);
+    }
+
+    h2 {
+      color: var(--text);
+      font-size: 32px;
+    }
+    h3 {
+      color: var(--text);
+      font-size: 24px;
+      padding: 0;
+    }
+    h4 {
+      color: var(--text);
+      font-size: 20px;
+    }
+    img {
+      max-width: 90%;
+      object-fit: cover;
+      margin: auto;
+      border-radius: 4px;
+      box-shadow: var(--shadow);
+    }
+    .hidden {
+      display: none;
+    }
+
+    .side-by-side{
+      display: flex;
+      gap: 20px;
+      padding: 5px;
+      width: 90%;
+      margin: auto;
+    }
+
+    .text{
+      display: block;
+      max-width: 45%;
+      font-size: 19px;
+      margin: 0px;
+      color: var(--text-muted);
+    }
