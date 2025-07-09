@@ -38,6 +38,9 @@
       border-radius: 8px;
       border: solid 1px var(--border);
     }
+    button:hover{
+      animation: zoom 1s ease-in-out forwards;
+    }
     section {
       max-width: 75%;
       margin: 2rem auto;
@@ -74,6 +77,9 @@
       border-radius: 4px;
       box-shadow: var(--shadow);
     }
+    img:hover{
+      animation: zoom 1s ease-in-out forwards;
+    }
     .hidden {
       display: none;
     }
@@ -93,3 +99,9 @@
       margin: 0px;
       color: var(--text-muted);
     }
+
+  @keyframes zoom {
+    100% {
+      scale: 1.07;
+    }
+  }
