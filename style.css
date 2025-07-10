@@ -38,8 +38,9 @@
       border-radius: 8px;
       border: solid 1px var(--border);
     }
-    button:hover{
-      animation: zoom 1s ease-in-out forwards;
+    .focus:focus {
+      scale: 1.07;
+      font-weight: 700;
     }
     section {
       max-width: 75%;

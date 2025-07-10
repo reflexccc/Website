@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
   <title>Vinzenz Krüger</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,12 +13,12 @@
   </header>
 
   <nav>
-    <button onclick="showVersion('english')">English</button>
-    <button onclick="showVersion('deutsch')">Deutsch</button>
+    <button class="focus" onclick="showVersion('English')">English</button>
+    <button class="focus" onclick="showVersion('Deutsch')">Deutsch</button>
   </nav>
 
   <!-- Version 1 -->
-  <div id="english" class="content">
+  <div id="English" class="content">
     <section>
       <img src="start.jpg">
     </section>
@@ -134,7 +134,7 @@
   </div>
 
   <!-- Version 2 (identisch, kann später angepasst werden) -->
-  <div id="deutsch" class="content hidden">
+  <div id="Deutsch" class="content hidden">
     <section>
       <img src="start.jpg">
     </section>
@@ -249,8 +249,8 @@
 
   <script>
     function showVersion(id) {
-      document.getElementById('english').classList.add('hidden');
-      document.getElementById('deutsch').classList.add('hidden');
+      document.getElementById('English').classList.add('hidden');
+      document.getElementById('Deutsch').classList.add('hidden');
       document.getElementById(id).classList.remove('hidden');
     }
   </script>
