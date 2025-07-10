@@ -8,7 +8,6 @@
       --border: hsl(0 0% 50%);
       --shadow: 1px 1px 3px hsla(0, 0%, 60%, 0.93), 3px 3px 3px hsla(0, 0%, 50%, 0.85);
     }
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -65,7 +64,7 @@ a {
 }
 
 a:hover{
-  color: var(--text);
+  color: var(--link);
   animation: zoom 0.5s ease-in-out forwards;
 }
 
@@ -112,6 +111,12 @@ a:hover{
       color: var(--text-muted);
     }
 
+    .links{
+      display: grid;
+      grid-auto-flow: row;
+      grid-gap: auto;
+    }
+    
   @keyframes zoom {
   100% {
     scale: 1.07;
