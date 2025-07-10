@@ -38,25 +38,36 @@
       border-radius: 8px;
       border: solid 1px var(--border);
     }
-    .focus:focus {
+    .focus {
       scale: 1.07;
       font-weight: 700;
     }
     section {
-      max-width: 75%;
+      max-width: 80%;
       margin: 2rem auto;
       padding: 1rem;
       background: var(--bg);
       border-radius: 8px;
-      border: solid 1px var(--border);
+      border: solid 2px var(--border);
 
       align-items: center;
       display: flex;
       justify-content: center;
     }
-    a {
-      color: var(--link);
-    }
+
+a {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border: solid 1px var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+a:hover{
+  color: var(--text);
+  animation: zoom 0.5s ease-in-out forwards;
+}
 
     h2 {
       color: var(--text);
@@ -102,7 +113,7 @@
     }
 
   @keyframes zoom {
-    100% {
-      scale: 1.07;
-    }
+  100% {
+    scale: 1.07;
   }
+}
