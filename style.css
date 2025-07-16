@@ -70,23 +70,23 @@ a:hover{
 
     h2 {
       color: var(--text);
-      font-size: 32px;
+      font-size: 5.5vw;
     }
     h3 {
       color: var(--text);
-      font-size: 24px;
+      font-size: 4vw;
       padding: 0;
+      text-decoration: underline 2px;
     }
     h4 {
       color: var(--text);
-      font-size: 20px;
+      font-size: 2.75vw;
     }
     img {
       max-width: 90%;
       object-fit: cover;
       margin: auto;
       border-radius: 4px;
-      box-shadow: var(--shadow);
     }
     img:hover{
       animation: zoom 1s ease-in-out forwards;
@@ -106,7 +106,7 @@ a:hover{
     .text{
       display: block;
       max-width: 45%;
-      font-size: 19px;
+      font-size: 2.3vw;
       margin: 0px;
       color: var(--text-muted);
     }
