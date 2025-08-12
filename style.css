@@ -1,12 +1,12 @@
     :root{
-      --bg-dark: hsl(189 100% 10%);
-      --bg: hsl(189, 100%, 17%);
+      --bg-dark: hsl(189, 50%, 5%);
+      --bg: hsl(189, 50%, 10%);
       --bg-light: hsl(189 100% 30%);
-      --text: hsl(68, 100%, 97%);
+      --text: hsl(0, 0%, 97%);
       --text-muted: hsl(0 0% 75%);
       --link: hsl(0, 55%, 47%);
-      --border: hsl(61, 100%, 91%);
-      --shadow: 1px 1px 3px hsla(0, 0%, 60%, 0.93), 3px 3px 3px hsla(0, 0%, 50%, 0.85);
+      --border: hsl(189, 20%, 91%);
+      --shadow: 1px 1px 3px hsla(189, 20%, 60%, 0.93), 3px 3px 3px hsla(0, 0%, 50%, 0.85);
     }
     body {
       margin: 0;
@@ -90,7 +90,7 @@ a:hover{
       object-fit: cover;
       margin: auto;
       border-radius: 4px;
-      box-shadow: var(--shadow);
+      /*box-shadow: var(--shadow);*/
     }
     img:hover{
       animation: zoom 1s ease-in-out forwards;
