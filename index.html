@@ -1,0 +1,135 @@
+<html style="background-color: var(--secondary-color);">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" initial-scale="1.0" lang="en"/>
+  <title>Vinzenz Krüger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="functions.js" defer></script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7fbf6355c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body onscroll="id_check()" id="body" style="display: grid;">
+    <header>
+        <h1>Vinzenz Krüger</h1>
+        <div id="seiten" class="sections">
+            <button title="Home" onclick="to_id()" class="menu on">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <button title="About me" onclick="to_id()" class="menu">
+                <i class="fa-solid fa-circle-info"></i>
+            </button>
+            <button title="Results" onclick="to_id()" class="menu">
+                <i class="fa-solid fa-trophy"></i>
+            </button>
+            <button title="Social Media" onclick="to_id()" class="menu">
+                <i class="fa-solid fa-share"></i>
+            </button>
+            <button title="Contact" onclick="to_id()" class="menu">
+                <i class="fa-solid fa-address-book"></i>
+            </button>
+        </div>
+        <a title="Change Language" class="lang" href="deutsch.html" style="overflow: visible;">
+            <p style="font-size: 4vh;">🇬🇧</p>
+        </a>
+    </header>
+
+    <div class="seite" style="display: flex; align-items: center; justify-content: center; height: 90vh;">
+        <video class="bg-video" autoplay muted loop>
+            <source src="Maribor Gopro.mp4" type="video/mp4">
+        </video>
+
+        <p class="overlay" style="text-align: center; align-content: center; font-size: 4.5vw; font-family: playwrite-dk-uloopet-guides-regular; overflow: hidden;">
+            "<i>Hello</i>, my name is Vinzenz Krüger and I am a <i>Downhill</i> <b>Racer</b>."
+        </p>
+    </div>
+
+    <div class="seite vorstellung" style="display: grid; grid-template-columns: 40% 40%; align-items: center; justify-content: space-evenly; height: 90vh;">
+        <img style="width: 100%;" src="Bellwald 1.jpg"></img>
+
+        <div style="width: auto; align-items: start; background-color: transparent;">
+            <p style="font-size: 6vw !important; margin: 0; color: var(--secondary-color);">I am…</p>
+            <ul>
+                <li>16 years old</li>
+                <li><i style="color: var(--secondary-color);" class="fa-solid fa-bicycle"></i> & <i style="color: var(--secondary-color)"; class="fa-solid fa-computer"></i> nerd</li>
+            </ul>
+            <p style="font-size: 4vw; margin: 0; margin-left: 25;">
+                …and especially love <i>downhill</i> riding
+            </p>
+        </div>
+    </div>
+
+    <div class="seite erfolge" style=" height: 90vh;">
+        <button class="flip_chart" style="position: relative; background-image: url(Bellwald\ 1.jpg);">
+            <jahr class="year">
+                2026 - U19 Pro
+                <!-- <i class="fa-regular fa-calendar"></i> -->
+            </jahr>
+            <p class="text hidden" style="position: absolute; top: 0; font-size: 2.5vw;">
+                <u>European DH Cup</u><br>#1: 46.<br>#3: 17.<br>
+                <u>IXS DH Cup</u><br>#1: 9.<br>
+            </p>
+        </button>
+
+        <button class="flip_chart" style="position: relative; background-image: url(Ilmenau\ Stage\ dive.jpg);">
+            <jahr class="year">
+                2025 - U17 Pro
+                <!-- <i class="fa-regular fa-calendar"></i> -->
+            </jahr>
+
+            <p class="text hidden" style="position: absolute; top: 0; font-size: 2.5vw;">
+                <u>IXS DH Cup</u><br>
+                Overall: 2. <br>
+                #2: 2. <br>
+                #4: 2. <br>
+                #5: 3. <br>
+
+                <u>Rookies Cup</u><br>
+                Overall: 3. <br>
+                #2: 1. <br>
+                #5: 3. <br>
+
+                <u>European DH Cup</u><br>
+                #6: 20.
+            </p>
+        </button>
+    </div>
+
+    <div class="seite sm" style="display: grid; grid-template-columns: 40% 40%; align-items: center; justify-content: center; height: 90vh;">
+        <video class="video" style="width: 80%;" controls>
+            <source src="Schladders2.mov">
+        </video>
+
+        <div style="display: flex; gap: 30px; top: 0; width: 100%; justify-content: center;">
+            <a class="border" href="https://www.tiktok.com/@vinzenz_kruger">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a class="border" href="https://www.instagram.com/vinzenz_kruger/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="seite" style="display:flex; flex-direction: column; align-items: center; justify-content: center; height: 90vh;">
+        <img class="contact"
+            src="Profil.jpg"
+            style="width: 50%;">
+
+        <div style="display:flex; flex-direction:column; align-items: center; justify-content: start; background:transparent; top: 2%;">
+            <p style="text-align:center; font-size:2vh; top: 10px;">
+                <i class="fa-solid fa-phone"></i>
+                +49 1573 9070908
+            </p>
+
+            <p style="text-align:center; font-size:2vh;">
+                <i class="fa-solid fa-envelope"></i>
+                vinzenzkrueger@gmx.de
+            </p>
+
+        </div>
+    </div>
+
+</body>
+</html>
