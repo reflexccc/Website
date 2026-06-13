@@ -4,6 +4,8 @@
 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+
+    font-family: "Contrail One";
 }
 
 .seite{
@@ -11,15 +13,15 @@
 }
 
 :root {
-    --main-color:hsl(204, 100%, 4%);
-    --secondary-color: hwb(0 15% 43%);
+    --main-color:hsl(203, 33%, 9%);
+    --secondary-color: hwb(0 8% 39%);
     --accent-1: hsl(0, 0%, 80%);
     --accent-2: hsl(0, 0%, 100%);
 }
 
 header{         
     width: 100vw;
-    height: 13%;
+    height: 10vh;
     background-color: var(--accent-1);
     z-index: 2;
 
@@ -39,10 +41,6 @@ header{
     justify-content: center;
 
     gap: 0.3rem;
-}
-
-#seiten{
-    z-index: 3;
 }
 
 /*LINKS*/
@@ -94,13 +92,12 @@ p{
     font-family: playwrite-dk-uloopet-guides-regular;
 }
 
-
 ul{
     color: var(--accent-1);
 
     font-family: playwrite-dk-uloopet-guides-regular;
     font-weight: 600;
-    font-size: 4vh;
+    font-size: 4vw;
 }
 
 body{
@@ -110,10 +107,11 @@ body{
 }
 
 div{
-    top: 13%;
+    top: 10vh;
     position: relative;
     background-color: var(--main-color);
     width: 100%;
+    height: 90vh;
 
     overflow-x: hidden;
 }
@@ -135,7 +133,7 @@ h1{
     width: 100%;
 
     font-size: 6vh;
-    font-family: modak-regular;
+    font-family: "Faster One", system-ui;
 
     color: var(--secondary-color);
 }
@@ -265,16 +263,28 @@ jahr{
 
 .erfolge{
     display: grid;
-    grid-template-columns: 42% 42%;
+    grid-template-columns: 40% 40%;
     position: relative;
-    height: 100vh;
+    height: 90vh;
     align-items: center;
     justify-content: space-evenly;
 }
 
-ul{
-    font-size: 4vw;
+.sm{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
 }
+
+.contact{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /*ANIMATIONEN*/
 @keyframes scroll-x {
