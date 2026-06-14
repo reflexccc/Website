@@ -4,11 +4,11 @@ const jahre = document.querySelectorAll(".year");
 const seiten = document.querySelectorAll(".seite");
 const icons = document.querySelectorAll(".menu");
 const body = document.querySelector("#body");
+const titel = document.querySelector("#titel");
 const videos = document.querySelectorAll(".video");
 const lang = document.querySelectorAll(".lang");
 
 body.addEventListener("scroll", id_check);
-
 /*videos.forEach((vid, i) => {
     vid.addEventListener("scroll", () => pause(vid));
 })*/
@@ -52,6 +52,10 @@ function to_id(number){
     });
 };
 
-/*function pause(element){
-    element.pause();
-};*/
+function copytext(element){
+    const text = element.getAttribute('title');
+
+    navigator.clipboard.writeText(text);
+
+    alert("Copied: " + text);
+};

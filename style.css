@@ -1,104 +1,34 @@
-/*FARBEN*/
+/* ==================================================
+   GLOBAL
+================================================== */
+
 *{
     margin: 0;
 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 
-    font-family: "Contrail One";
+    font-family: "Google Sans";
 }
 
 .seite{
     scroll-snap-align: end;
 }
 
+/* ==================================================
+   FARBEN
+================================================== */
+
 :root {
-    --main-color:hsl(203, 33%, 9%);
-    --secondary-color: hwb(0 8% 39%);
+    --main-color:hsl(135, 22%, 7%);
+    --secondary-color: hwb(0 6% 49%);
     --accent-1: hsl(0, 0%, 80%);
     --accent-2: hsl(0, 0%, 100%);
 }
 
-header{         
-    width: 100vw;
-    height: 10vh;
-    background-color: var(--accent-1);
-    z-index: 2;
-
-    gap: 0;
-
-    position: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}   
-/*MENÜ*/
-.sections{
-    background-color: transparent;
-    position: static;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 0.3rem;
-}
-
-/*LINKS*/
-a{
-    font-size: 4vw;
-    background-color: var(--main-color);
-    color: var(--accent-1);
-
-    border-radius: 30px;
-    border: 2px solid var(--main-color);
-
-    padding: 0.3rem;
-
-    justify-content: center;
-}
-a:hover{
-    color: var(--accent-2);
-    border: 3px dashed var(--accent-2);
-    animation: 0.15s bigger forwards ease-in-out;
-}
-button{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--main-color);
-    color: var(--accent-1);
-    border: 4px solid var(--accent-1);
-    border-radius: 15px;
-
-    background-size: cover;
-    aspect-ratio: 1;
-    font-size: 5vh;
-}
-button:hover{
-    border-color: var(--accent-2);
-    animation: 0.20s bigger forwards ease-in-out;
-}
-button.menu:hover{
-    border-color: var(--secondary-color);
-}
-/*TEXT*/
-p{
-    color: var(--accent-1);
-
-    font-size: 22;
-    font-weight: 600;
-    font-family: playwrite-dk-uloopet-guides-regular;
-}
-
-ul{
-    color: var(--accent-1);
-
-    font-family: playwrite-dk-uloopet-guides-regular;
-    font-weight: 600;
-    font-size: 4vw;
-}
+/* ==================================================
+   LAYOUT
+================================================== */
 
 body{
     margin: 0;
@@ -115,7 +45,167 @@ div{
 
     overflow-x: hidden;
 }
-/*BILDER*/
+
+/* ==================================================
+   HEADER & NAVIGATION
+================================================== */
+
+header{         
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--accent-1);
+    z-index: 2;
+
+    gap: 0;
+
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sections{
+    background-color: transparent;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.3rem;
+}
+
+.menu{
+    position: relative;
+    border-radius: 10px;
+}
+
+.on{
+    color: var(--secondary-color) !important;
+}
+
+/* ==================================================
+   BUTTONS
+================================================== */
+
+button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-color);
+    color: var(--accent-1);
+    border: 4px solid var(--accent-1);
+    border-radius: 15px;
+
+    background-size: cover;
+    aspect-ratio: 1;
+    font-size: 5vh;
+}
+
+button:hover{
+    border-color: var(--secondary-color);
+    animation: 0.3s bigger forwards ease-in-out;
+}
+
+/* ==================================================
+   LINKS
+================================================== */
+
+a{
+    display: flex;
+    font-size: 4vw;
+
+    background-color: var(--main-color);
+    color: var(--accent-1);
+
+    border-radius: 30px;
+
+    padding: 0.3rem;
+    aspect-ratio: 1;
+
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover{
+    color: var(--accent-2);
+    border: 4px solid var(--secondary-color);
+    animation: 0.3s bigger forwards ease-in-out;
+}
+
+.lang{
+    height: 60%;
+
+    aspect-ratio: 1;
+    margin-right: 2vw;
+    border-radius: 10px;
+
+    text-decoration-line: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-color);
+    color: var(--accent-1);
+    border: 4px solid var(--accent-1);
+}
+
+/* ==================================================
+   TYPOGRAPHIE
+================================================== */
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    font-size: 4.5vw;
+
+    color: var(--secondary-color);
+
+    font-family: "Bowlby One SC";
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    font-size: 5vw;
+
+    color: var(--secondary-color);
+
+    font-family: "Tourney";
+}
+
+jahr{
+    color:hsl(0, 0%, 100%);
+
+    font-size: 4vh;
+    font-weight: 800;
+}
+
+p{
+    color: var(--accent-1);
+
+    font-size: 3vw;
+}
+
+ul{
+    color: var(--accent-1);
+    font-size: 3vw;
+
+    list-style-type: circle;
+}
+
+/* ==================================================
+   BILDER & VIDEOS
+================================================== */
+
 img{
     position: relative;
 
@@ -126,116 +216,9 @@ img{
 
     box-shadow: 0 -4px 30px rgba(255, 255, 255, 0.2);
 }
-h1{
-    display: flex;
-    justify-content: center;
 
-    width: 100%;
-
-    font-size: 6vh;
-    font-family: "Faster One", system-ui;
-
-    color: var(--secondary-color);
-}
-h2{
-    color:hsl(0, 0%, 100%);
-
-    font-size: 22;
-    font-weight: 800;
-    font-family: Poppins;
-}
-jahr{
-    color:hsl(0, 0%, 100%);
-
-    font-size: 4vh;
-    font-weight: 800;
-    font-family: Poppins;
-}
-/*ICONS*/
-.fa-instagram{
-    font-size: 8vw;
-}
-
-.fa-tiktok{
-    font-size: 8vw;
-}
-/*icon menü spezifikationen*/
-.menu{
-    position: relative;
-    border-radius: 10px;
-}
-/*Border sichtbar machen*/
-.border{
-    border: 4px solid var(--accent-1);
-    animation: none !important;
-    height: fit-content;
-}
-
-.thirty{
-    left: 25;
-    top: 25;
-    right: 25;
-}
-
-.on{
-    color: var(--secondary-color) !important;
-}
-.hidden{
-    color: transparent;
-}
-
-.blur{
-    backdrop-filter: blur(8px);
-}
-
-.flip_chart{
-    border-radius: 20px;
-
-    background-color: hsla(0, 0%, 0%, 0.35);
-    background-blend-mode: darken;
-    border-color: var(--accent-2);
-
-    overflow: hidden;
-
-    align-items: flex-end;
-    box-shadow: 0 -4px 30px rgba(255, 255, 255, 0.2);
-}
-
-.dark{
-    background-color: hsla(0, 0%, 0%, 0.85) !important;
-    background-blend-mode: darken;
-
-    backdrop-filter: blur(10px);
-
-    border-color: var(--accent-2);
-}
-
-.text{
-    font-size: 3vh;
-    width: 100%;
-    height: 100%;
-}
-
-.lang{
-    height: 60%;
-    aspect-ratio: 1;
-    margin-right: 2vw;
-    border-radius: 10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--main-color);
-    color: var(--accent-1);
-    border: 4px solid var(--accent-1);
-
-    padding: 0;
-}
-
-.lang:hover{
-    border: 4px solid var(--secondary-color) !important;
-    animation: 0.20s bigger forwards ease-in-out;
+video{
+    max-height: 100%;
 }
 
 .bg-video{
@@ -261,6 +244,75 @@ jahr{
     background: hsla(0, 0%, 0%, 0.67);
 }
 
+/* ==================================================
+   ICONS
+================================================== */
+.icons{
+    display: grid; 
+    grid-template-columns: 40% 40%; 
+    top: 0;
+
+    height: 25vw;
+    width: 35vw;
+
+    justify-content: center; 
+    align-items: center;
+}
+
+.contact-icons{
+    border: 4px solid var(--accent-1);
+    border-radius: 30px;
+    
+    animation: none !important;
+    text-decoration-line: none;
+
+    font-size: 8vw;
+    padding: 0.3rem;
+
+    width: fit-content;
+}
+
+/* ==================================================
+   RESULTS CARDS
+================================================== */
+
+.flip_chart{
+    border-radius: 20px;
+
+    background-color: hsla(0, 0%, 0%, 0.45);
+    background-blend-mode: darken;
+    border-color: var(--accent-2);
+
+    overflow: hidden;
+
+    align-items: flex-end;
+    box-shadow: 0 -4px 30px rgba(255, 255, 255, 0.2);
+}
+
+.flip_chart:hover{
+    border-color: var(--secondary-color) !important;
+
+    animation: bigger 0.7s forwards ease-in-out;
+}
+
+.dark{
+    background-color: hsla(0, 0%, 0%, 0.85) !important;
+    background-blend-mode: darken;
+
+    backdrop-filter: blur(10px);
+
+    border-color: var(--accent-2);
+}
+
+.text{
+    width: 100%;
+    height: 100%;
+}
+
+/* ==================================================
+   SECTIONS
+================================================== */
+
 .erfolge{
     display: grid;
     grid-template-columns: 40% 40%;
@@ -270,38 +322,85 @@ jahr{
     justify-content: space-evenly;
 }
 
+.vorstellung{
+    display: grid; 
+    grid-template-columns: 40% 40%; 
+    height: 90vh;
+
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
 .sm{
     display: grid;
     grid-template-columns: 40% 40%;
     height: 90vh;
+
     align-items: center;
     justify-content: center;
 }
 
-.contact{
-    display: grid;
-    grid-template-columns: 40% 40%;
+.sponsoren{
+    display: flex;
+    flex-direction: column;
+
+    height: 90vh;
+    
+    justify-content: start;
     align-items: center;
-    justify-content: center;
 }
 
+.sponsor{
+    width: fit-content;
+    aspect-ratio: unset;
 
-/*ANIMATIONEN*/
-@keyframes scroll-x {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
+    text-decoration-color: var(--main-color);
+    text-decoration-line: underline;
+    border: 4px solid transparent;
+
+    font-size: 5vw;
 }
+
+.sponsor:hover{
+    text-decoration-color: var(--accent-1);
+    border: none;
+
+    animation: none !important;
+}
+
+/* ==================================================
+   UTILITY CLASSES
+================================================== */
+
+.hidden{
+    color: transparent;
+}
+
+.kontakt-daten{
+    display:flex;
+    flex-direction: column;
+    align-items: end; 
+    justify-content: start; 
+    background:transparent; 
+    top: 2vh; 
+    height: auto;
+}
+
+/* ==================================================
+   ANIMATIONEN
+================================================== */
 
 @keyframes bigger {
     0% {scale: 1.00;}
     100% {scale: 1.07;}
 }
 
+/* ==================================================
+   RESPONSIVE DESIGN
+================================================== */
+
 @media (max-width: 600px) {
+
     *{
         scrollbar-width: 0;
     }
@@ -316,13 +415,7 @@ jahr{
 
     .erfolge{
         display: grid;
-        grid-template-columns: 70%;
-    }
-
-    .sm{
-        grid-template-columns: 70% !important;
-        justify-content: center !important;
-                
+        grid-template-columns: 50%;
     }
 
     p{
@@ -331,15 +424,27 @@ jahr{
 
     .vorstellung{
         display: grid !important;
-        grid-template-columns: 70% !important;
+        grid-template-columns: 90% !important;
+
+        justify-content: start;
+
+        max-height: 90vh;
     }
 
     .contact{
-        width: 70% !important;
+        display: grid !important;
+        grid-template-columns: 90% !important;
+
+        top: 0;
+    }
+
+    .kontakt-daten{
+        align-items: center;
     }
 }
 
 @media (max-width: 850px) {
+
     .sections{
         width: 0%;
     }
