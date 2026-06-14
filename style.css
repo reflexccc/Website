@@ -161,6 +161,7 @@ h1{
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-height: 10vh;
 
     font-size: 4.5vw;
 
@@ -192,12 +193,12 @@ jahr{
 p{
     color: var(--accent-1);
 
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 ul{
     color: var(--accent-1);
-    font-size: 3vw;
+    font-size: 2.5vw;
 
     list-style-type: circle;
 }
@@ -214,7 +215,9 @@ img{
     aspect-ratio: 1;
     object-fit: cover;
 
-    box-shadow: 0 -4px 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 -5px 25px rgba(255, 255, 255, 0.2);
+
+    overflow: hidden;
 }
 
 video{
@@ -248,14 +251,18 @@ video{
    ICONS
 ================================================== */
 .icons{
-    display: grid; 
-    grid-template-columns: 40% 40%; 
+    display: flex;
+    flex-direction: column;
+    column-count: 0;
     top: 0;
+    gap: 10px;
 
-    height: 25vw;
-    width: 35vw;
+    height: 90vh;
+    max-height: 80%;
+    width: 35%;
 
-    justify-content: center; 
+
+    justify-content: center;
     align-items: center;
 }
 
@@ -266,7 +273,7 @@ video{
     animation: none !important;
     text-decoration-line: none;
 
-    font-size: 8vw;
+    font-size: 75;
     padding: 0.3rem;
 
     width: fit-content;
@@ -323,17 +330,18 @@ video{
 }
 
 .vorstellung{
-    display: grid; 
-    grid-template-columns: 40% 40%; 
+    display: flex;
+    flex-direction: row;
+
     height: 90vh;
 
     align-items: center; 
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .sm{
-    display: grid;
-    grid-template-columns: 40% 40%;
+    display: flex;
+    flex-direction: row;
     height: 90vh;
 
     align-items: center;
@@ -406,7 +414,10 @@ video{
     }
 
     h1{
-        font-size: 4vh;
+        font-size: 4.5vh;
+    }
+    jahr{
+        font-size: 2.5vh;
     }
 
     .sections{
@@ -418,15 +429,8 @@ video{
         grid-template-columns: 50%;
     }
 
-    p{
-        font-size: 4vw;
-    }
-
     .vorstellung{
-        display: grid !important;
-        grid-template-columns: 90% !important;
-
-        justify-content: start;
+        flex-direction: column !important;
 
         max-height: 90vh;
     }
@@ -436,10 +440,6 @@ video{
         grid-template-columns: 90% !important;
 
         top: 0;
-    }
-
-    .kontakt-daten{
-        align-items: center;
     }
 }
 
