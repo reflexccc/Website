@@ -56,6 +56,4 @@ function copytext(element){
     const text = element.getAttribute('title');
 
     navigator.clipboard.writeText(text);
-
-    alert("Copied: " + text);
 };
