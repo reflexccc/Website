@@ -355,11 +355,12 @@ video{
     justify-content: center;
 }
 
-.sponsoren{
+.sponsorenliste{
     display: flex;
     flex-direction: column;
 
-    height: 90vh;
+    top: 0;
+    max-height: 80%;
     
     justify-content: start;
     align-items: center;
@@ -448,6 +449,20 @@ video{
 
         top: 0;
     }
+    .contact-icons{
+        font-size: 60;
+    }
+
+    .sponsoren{
+        flex-direction: column;
+        max-height: 90vh;
+
+    }
+    
+    .sponsorenliste{
+        height: fit-content;
+    }
+    
 }
 
 @media (max-width: 850px) {
