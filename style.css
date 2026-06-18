@@ -64,6 +64,24 @@ header{
     align-items: center;
 }
 
+alert{
+    width: 23vw;
+    height: 20vh;
+    border-radius: 30px;
+    background-color: var(--accent-1);
+    
+    z-index: 2;
+
+    bottom: 2vh;
+    right: 2vh;
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .sections{
     background-color: transparent;
     position: static;
@@ -280,7 +298,7 @@ video{
     animation: none !important;
     text-decoration-line: none;
 
-    font-size: 75;
+    font-size: 50;
     padding: 0.3rem;
 
     width: fit-content;
@@ -374,7 +392,7 @@ video{
     text-decoration-line: underline;
     border: 4px solid transparent;
 
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 .sponsor:hover{
@@ -389,6 +407,8 @@ video{
 ================================================== */
 
 .hidden{
+    content-visibility: hidden;
+    background-color: transparent;
     color: transparent;
 }
 
@@ -424,6 +444,11 @@ video{
     h1{
         font-size: 4.5vh;
     }
+
+    header{
+        justify-items: center;
+    }
+
     jahr{
         font-size: 2.5vh;
     }
@@ -450,17 +475,13 @@ video{
         top: 0;
     }
     .contact-icons{
-        font-size: 60;
+        font-size: 40;
     }
 
     .sponsoren{
         flex-direction: column;
         max-height: 90vh;
 
-    }
-    
-    .sponsorenliste{
-        height: fit-content;
     }
     
 }

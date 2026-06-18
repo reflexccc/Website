@@ -36,6 +36,11 @@
         <a title="Change Language" class="lang" href="deutsch.html" style="overflow: visible;">🇩🇪</a>
     </header>
 
+    <alert class="hidden">
+        <h2>Copied:</h2>
+        <p id="alert_text" style="color: var(--secondary-color);">a</p>
+    </alert>
+
     <div class="seite" style="display: flex; align-items: center; justify-content: center;">
         <video class="bg-video" autoplay muted loop>
             <source src="Maribor Gopro.mp4" type="video/mp4">
@@ -54,9 +59,9 @@
         <div style="display: flex; flex-direction: column; top: 0; width: auto; justify-content: center; background-color: transparent; padding: 10px;">
             <h2 style="justify-content: start;">FACTS</h2>
             <ul style="margin-left: 10px;">
-                <li>mud conditions are the most fun</li>
-                <li>setup is key</li>
-                <li>Motto: Trust the process</li>
+                <li>Mud conditions are the most fun</li>
+                <li>Setup is key</li>
+                <li>Motto: All or nothing!!!</li>
             </ul>
         </div>
     </div>
@@ -112,10 +117,10 @@
             <a class="contact-icons" href="https://www.tiktok.com/@vinzenz_kruger">
                 <i class="fa-brands fa-tiktok"></i>
             </a>
-            <a class="contact-icons copy" title="+49 1573 9070908" onclick="copytext(this)">
+            <a class="contact-icons copy" title="+49 1573 9070908" onclick="show_alert(this)">
                 <i class="fa-solid fa-phone"></i>
             </a>
-            <a class="contact-icons copy" title="vinzenzkrueger@gmx.de" onclick="copytext(this)">
+            <a class="contact-icons copy" title="vinzenzkrueger@gmx.de" onclick="show_alert(this)">
                 <i class="fa-solid fa-envelope"></i>
             </a>
         </div>
@@ -142,9 +147,13 @@
         <div class="sponsorenliste">
             <h2 style="margin-bottom: 10px;">Sponsors</h2>
             <a class="sponsor" href="https://www.propain-bikes.com/">Propain Bicycles</a>
+            <a class="sponsor" href="https://radoxx.de/de/">Radoxx Components</a>
+            <a class="sponsor" href="https://www.bikepark-samerberg.de/">Bikepark Samerberg</a>
+            <a class="sponsor" href="https://www.pauls-suspension-lab.de/">Pauls Suspension Lab</a>
+            <a class="sponsor" href="https://www.maloja.com/">Maloja</a>
         </div>
 
-        <div style="display: flex; justify-content: center; align-items: center; max-height: 80%; max-width: 60%; top: 0;">
+        <div style="display: flex; justify-content: center; align-items: center; max-height: 80%; max-width: 60%; top: 0; overflow: hidden;">
             <img id="profil" src="Profil.jpg">
         </div>
     </div>
