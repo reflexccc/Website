@@ -6,6 +6,7 @@ const btns_flipchart = document.querySelectorAll(".flip_chart");
 /*ALERT*/
 const alert = document.querySelector("alert");
 const alert_text = document.getElementById("alert_text");
+const alert_icons = document.getElementById("copy");
 
 const seiten = document.querySelectorAll(".seite");
 
