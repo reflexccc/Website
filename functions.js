@@ -31,7 +31,7 @@ function show_alert(contact){
     setTimeout(() => {
         alert.classList.add("hidden");
         alert.style.zIndex = "-1";
-    }, 10000);
+    }, 5000);
 };
 
 function toggle_hidden(element){

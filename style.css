@@ -82,6 +82,10 @@ alert{
     align-items: center;
 }
 
+#alert_text{
+    font-size: 2vw;
+}
+
 .sections{
     background-color: transparent;
     position: static;
