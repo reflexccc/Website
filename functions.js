@@ -1,22 +1,25 @@
-const btns = document.querySelectorAll(".flip_chart");
-const text = document.querySelectorAll(".text");
-const jahre = document.querySelectorAll(".year");
-const seiten = document.querySelectorAll(".seite");
-const icons = document.querySelectorAll(".menu");
-const body = document.querySelector("#body");
-const titel = document.querySelector("#titel");
-const videos = document.querySelectorAll(".video");
-const lang = document.querySelectorAll(".lang");
+/*FLIPCHART*/
+const text_flipchart = document.querySelectorAll(".text");
+const jahre_flipchart = document.querySelectorAll(".year");
+const btns_flipchart = document.querySelectorAll(".flip_chart");
+
+/*ALERT*/
 const alert = document.querySelector("alert");
 const alert_text = document.getElementById("alert_text");
 
+const seiten = document.querySelectorAll(".seite");
+
+const menu_buttons = document.querySelectorAll(".menu");
+
+const body = document.querySelector("#body");
+
 body.addEventListener("scroll", id_check());
 
-btns.forEach((btn, i) => {
+btns_flipchart.forEach((btn, i) => {
     btn.addEventListener("click", () => hide_cards(i));
 });
 
-icons.forEach((icn, i) => {
+menu_buttons.forEach((icn, i) => {
     icn.addEventListener("click", () => to_id(i));
 });
 
@@ -39,17 +42,17 @@ function toggle_hidden(element){
 };
 
 function hide_cards(index){
-    btns[index].classList.toggle("dark");
-    toggle_hidden(text[index]);
-    toggle_hidden(jahre[index]);
+    btns_flipchart[index].classList.toggle("dark");
+    toggle_hidden(text_flipchart[index]);
+    toggle_hidden(jahre_flipchart[index]);
 };
 
 function id_check(){
     for (let i = 0; i<seiten.length; i++){
-        icons[i].classList.remove("on");
+        menu_buttons[i].classList.remove("on");
 
         if (is_in_viewport(seiten[i])){
-            icons[i].classList.add("on");
+            menu_buttons[i].classList.add("on");
         };
     }
 }
