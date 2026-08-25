@@ -507,10 +507,7 @@ video{
     }
 
     .contact{
-        display: grid !important;
-        grid-template-columns: 90% !important;
-
-        top: 0;
+        flex-direction: column;
     }
     .contact-icons{
         font-size: 40;
@@ -521,6 +518,14 @@ video{
         max-height: 90vh;
 
     }
+
+    .v_hide2{
+        display: none !important;
+    }
+
+    #profil{
+        display: none !important;
+    }
     
 }
 
@@ -528,5 +533,9 @@ video{
 
     .sections{
         width: 0%;
+    }
+
+    .v_hide{
+        display: none !important;
     }
 }
