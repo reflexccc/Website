@@ -1,7 +1,7 @@
 <html style="background-color: var(--secondary-color);">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" initial-scale="1.0" lang="en"/>
+  <meta name="viewport" content="width=device-width" initial-scale="1.0" lang="de"/>
   <title>Vinzenz Krüger</title>
   <link rel="stylesheet" href="style.css">
   <script src="functions.js" defer></script>
@@ -14,34 +14,23 @@
 </head>
 
 <body onscroll="id_check()" id="body" style="display: grid;">
-    <header>
-        <h1 id="titel">Vinzenz Krüger</h1>
-        <div id="seiten" class="sections">
-            <button title="Homepage" onclick="to_id()" class="menu on">
-                <i class="fa-solid fa-house"></i>
-            </button>
-            <button title="Über mich" onclick="to_id()" class="menu">
-                <i class="fa-solid fa-circle-info"></i>
-            </button>
-            <button title="Ergebnisse" onclick="to_id()" class="menu">
-                <i class="fa-solid fa-trophy"></i>
-            </button>
-            <button title="Soziale Medien" onclick="to_id()" class="menu">
-                <i class="fa-solid fa-share"></i>
-            </button>
-            <button title="Sponsoren" onclick="to_id()" class="menu">
-                <i class="fa-solid fa-handshake-angle"></i>
-            </button>
-        </div>
-        <a title="Change Language" class="lang" href="index.html" style="overflow: visible;">🇬🇧</a>
+    <header style="justify-content: right;">
+        <h1 class="titel">Vinzenz Krüger</h1>
+        <h1 class="titel">Über mich</h1>
+        <h1 class="titel">Erfolge</h1>
+        <h1 class="titel">Road to World Cup</h1>
+        <h1 class="titel">Was ich biete</h1>
+        <h1 class="titel">Partner</h1>
+        <h1 class="titel">Kontakt</h1>
+        <a title="Change Language" class="lang" href="index.html" style="overflow: visible; z-index: 1;">🇬🇧</a>
     </header>
 
     <alert class="hidden">
-        <h2>Kopiert:</h2>
+        <h2>Copied:</h2>
         <p id="alert_text" style="color: var(--secondary-color);">a</p>
     </alert>
 
-    <div class="seite" style="display: flex; align-items: center; justify-content: center;">
+    <div class="seite hero">
         <video class="bg-video" autoplay muted loop>
             <source src="Maribor Gopro.mp4" type="video/mp4">
         </video>
@@ -53,64 +42,83 @@
 
     <div class="seite vorstellung">
         <div style="top: 0; display: flex; justify-content: center; align-items: center;">
-            <img style="max-height: 80%; aspect-ratio: unset;" src="Kranskja Gora.JPG"></img>
+            <img style="max-height: 80%; aspect-ratio: unset;" src="EM sitzen.jpeg"></img>
         </div>
 
-        <div style="display: flex; flex-direction: column; top: 0; width: 45%; justify-content: center; background-color: transparent; padding: 10px;">
-            <h2 style="justify-content: start;">FACTS</h2>
-            <ul style="margin-left: 10px;">
-                <li>Schlammschlachten sind am lustigsten</li>
-                <li>Setup ist das A und O</li>
-                <li>Motto: Alles oder nichts!!!</li>
+        <div style="display: flex; flex-direction: column; top: 0; width: auto; justify-content: center; background-color: transparent; padding: 10px;">
+            <h2 style="justify-content: start;">Ich...</h2>
+            <ul>
+                <li>bin 17 Jahre alt</li>
+                <li>wurde 2025 🇩🇪 Vize-Meister (U17)</li>
+                <li>werde an Downhill World Cups teilnehmen</li>
+                <li>lebe nach dem Motto: Alles oder nichts!</li>
             </ul>
         </div>
     </div>
 
     <div class="seite erfolge">
-        <button class="flip_chart" style="position: relative; background-image: url(Bellwald\ 1.jpg); max-height: 90%;">
+        <button class="flip_chart" style="position: relative; background-image: url(Podium\ Spicak.webp); max-height: 90%;">
             <jahr class="year">
-                Ergebnisse<br>
+                Erfolge<br>
                 2026 - U19 Pro
                 <!-- <i class="fa-regular fa-calendar"></i> -->
             </jahr>
             <p class="text hidden" style="position: absolute; top: 0; font-size: 2.5vw;">
-                <u>Europäische Meisterschaften: 17.</u>
-                <u>European DH Cup</u><br>
-                #1: 46.<br>
+                <u>Europäische Meisterschaften:</u> 17.<br>
+                <u>European Downhill Cup</u><br>
                 #3: 17.<br>
                 #4: 11.<br>
                 #5: 17. <br>
                 <u>IXS DH Cup</u><br>
                 #1: 9.<br>
-                #4: 2.<br>
-                <u>French DH Cup</u><br>
+                #4: 🥈<br>
+                <u>Französischer Downhill Cup</u><br>
                 #2: 12.<br>
             </p>
         </button>
 
         <button class="flip_chart" style="position: relative; background-image: url(Ilmenau\ Stage\ dive.jpg); max-height: 90%;">
             <jahr class="year">
-                Ergebnisse<br>
+                Erfolge<br>
                 2025 - U17 Pro
                 <!-- <i class="fa-regular fa-calendar"></i> -->
             </jahr>
 
             <p class="text hidden" style="position: absolute; top: 0; font-size: 2.5vw;">
                 <u>IXS DH Cup</u><br>
-                Gesamtwertung: 2. <br>
-                #2: 2. <br>
-                #4: 2. <br>
-                #5: 3. <br>
+                Gesamt: 🥈 <br>
+                #2: 🥈 <br>
+                #4: 🥈 <br>
+                #5: 🥉 <br>
 
                 <u>Rookies Cup</u><br>
-                Gesamtwertung: 3. <br>
-                #2: 1. <br>
-                #5: 3. <br>
+                Gesamt: 🥉 <br>
+                #2: 🥇 <br>
+                #5: 🥉 <br>
 
-                <u>European DH Cup</u><br>
+                <u>European Downhill Cup</u><br>
                 #6: 20.
             </p>
         </button>
+    </div>
+
+    <div class="seite goals">
+        <div style="top: 0; display: flex; justify-content: center; align-items: center;">
+            <img style="max-height: 65%; aspect-ratio: unset;" src="Bellwald 1.jpg"></img>
+        </div>
+
+        <div style="display: flex; flex-direction: column; top: 0; justify-content: center; background-color: transparent; padding: 10px;">
+            <h2 style="justify-content: start;">Road to World Cup</h2>
+            <ul style="list-style-type: none;">
+                <li>✅ Podien bei lokalen Rennen</li>
+                <li>✅ Deutscher Vize-Meister</li>
+                <li>✅ Erfahrung bei internationalen Rennen</li>
+                <li>✅ Nationalteam bei Europameisterschaft</li>
+                <li>⏭️ World Cups</li>
+
+
+            </ul>
+        </div>
     </div>
 
     <div class="seite sm">
@@ -118,7 +126,18 @@
             <video muted controls preload="auto" src="Schladders2.mov"></video>
         </div>
 
+        <div style="max-height: 80%; top: 0; display: flex; justify-content: center;">
+            <video muted controls preload="auto" src="Ogau.mp4"></video>
+        </div>
+
         <div class="icons">
+            <ul style="font-size: 3.5vh;">
+                <li>Sichtbarkeit - Offline und Online</li>
+                <li>Social Media - Bis zu 17.000 Aufrufe/Post</li>
+                <li>Bereitstellen von Medien</li>
+                <li>Produkt Feedback</li>
+            </ul>
+
             <a class="contact-icons" href="https://www.instagram.com/vinzenz_kruger/">
                 <i class="fa-brands fa-instagram"></i>
             </a>
@@ -126,35 +145,12 @@
             <a class="contact-icons" href="https://www.tiktok.com/@vinzenz_kruger">
                 <i class="fa-brands fa-tiktok"></i>
             </a>
-            <a class="contact-icons copy" title="+49 1573 9070908" onclick="copytext(this)">
-                <i class="fa-solid fa-phone"></i>
-            </a>
-            <a class="contact-icons copy" title="vinzenzkrueger@gmx.de" onclick="copytext(this)">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
         </div>
     </div>
 
-    <div class="seite sponsoren" style="display: flex; justify-content: center; align-items: center;">
-        <!--
-       <div style="display: flex; flex-direction: column; top: 0; justify-content: center;">
-            <img src="Profil.jpg" style="max-width: 100%; height: 80%;">
-
-            <div class="kontakt-daten">
-                <p style="text-align:center; font-size:2vh; top: 10px;">
-                    <i class="fa-solid fa-phone"></i>
-                    +49 1573 9070908
-                </p>
-
-                <p style="text-align:center; font-size:2vh;">
-                    <i class="fa-solid fa-envelope"></i>
-                    vinzenzkrueger@gmx.de
-                </p>
-            </div>
-        </div> 
-    -->
+    <div class="seite sponsoren">
+    
         <div class="sponsorenliste">
-            <h2 style="margin-bottom: 10px;">Sponsors</h2>
             <a class="sponsor" href="https://www.propain-bikes.com/">Propain Bicycles</a>
             <a class="sponsor" href="https://radoxx.de/de/">Radoxx Components</a>
             <a class="sponsor" href="https://www.bikepark-samerberg.de/">Bikepark Samerberg</a>
@@ -162,10 +158,42 @@
             <a class="sponsor" href="https://www.maloja.com/">Maloja</a>
         </div>
 
-        <div style="display: flex; justify-content: center; align-items: center; max-height: 80%; max-width: 50%; top: 0; overflow: hidden;">
-            <img src="Profil.jpg">
+        <div style="display: flex; justify-content: center; align-items: center; max-height: 80%; max-width: 60%; top: 0; overflow: hidden;">
+            <img id="profil" src="Profil.jpg">
+        </div>
+    </div>
+
+    <div class="seite contact">
+
+        <div style="display: flex; justify-content: center; align-items: center; max-height: 80%; max-width: 60%; top: 0; overflow: hidden;">
+            <img id="profil" src="EM zeigen.jpeg">
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; top: 0;">
+            <p><i class="fa-solid fa-phone"></i> +4915739070908</p>
+            <p><i class="fa-solid fa-envelope"></i> vinzenzkrueger@gmx.de</p>
         </div>
     </div>
 
 </body>
 </html>
+
+<!--
+<div id="seiten" class="sections">
+            <button title="Home" onclick="to_id()" class="menu on">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <button title="About me" onclick="to_id()" class="menu">
+                <i class="fa-solid fa-circle-info"></i>
+            </button>
+            <button title="Results" onclick="to_id()" class="menu">
+                <i class="fa-solid fa-trophy"></i>
+            </button>
+            <button title="Social Media" onclick="to_id()" class="menu">
+                <i class="fa-solid fa-share"></i>
+            </button>
+            <button title="Sponsors" onclick="to_id()" class="menu">
+                <i class="fa-solid fa-handshake-angle"></i>
+            </button>
+        </div>
+-->

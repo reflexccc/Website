@@ -1,28 +1,30 @@
+const seiten = document.querySelectorAll(".seite");
+const body = document.querySelector("#body");
+const titel = document.querySelectorAll(".titel");
+
 /*FLIPCHART*/
 const text_flipchart = document.querySelectorAll(".text");
 const jahre_flipchart = document.querySelectorAll(".year");
 const btns_flipchart = document.querySelectorAll(".flip_chart");
 
-/*ALERT*/
-const alert = document.querySelector("alert");
-const alert_text = document.getElementById("alert_text");
-const alert_icons = document.getElementById("copy");
-
-const seiten = document.querySelectorAll(".seite");
-
-const menu_buttons = document.querySelectorAll(".menu");
-
-const body = document.querySelector("#body");
-
-body.addEventListener("scroll", id_check());
-
 btns_flipchart.forEach((btn, i) => {
     btn.addEventListener("click", () => hide_cards(i));
 });
 
-menu_buttons.forEach((icn, i) => {
-    icn.addEventListener("click", () => to_id(i));
-});
+function hide_cards(index){
+    btns_flipchart[index].classList.toggle("dark");
+    toggle_hidden(text_flipchart[index]);
+    toggle_hidden(jahre_flipchart[index]);
+};
+
+function toggle_hidden(element){
+    element.classList.toggle("hidden");
+};
+
+/*ALERT*/
+const alert = document.querySelector("alert");
+const alert_text = document.getElementById("alert_text");
+const alert_icons = document.getElementById("copy");
 
 function show_alert(contact){
     time = new Date();
@@ -38,32 +40,24 @@ function show_alert(contact){
     }, 5000);
 };
 
-function toggle_hidden(element){
-    element.classList.toggle("hidden");
+function copytext(element){
+    const text = element.getAttribute('title');
+
+    navigator.clipboard.writeText(text);
+
+    return(text);
 };
 
-function hide_cards(index){
-    btns_flipchart[index].classList.toggle("dark");
-    toggle_hidden(text_flipchart[index]);
-    toggle_hidden(jahre_flipchart[index]);
-};
+/*MENU*/
+/*const menu_buttons = document.querySelectorAll(".menu");
 
-function id_check(){
-    for (let i = 0; i<seiten.length; i++){
-        menu_buttons[i].classList.remove("on");
+menu_buttons.forEach((icn, i) => {
+    icn.addEventListener("click", () => to_id(i));
+});*/
 
-        if (is_in_viewport(seiten[i])){
-            menu_buttons[i].classList.add("on");
-        };
-    }
-}
 
-function is_in_viewport(element){
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top < window.innerHeight/2 && rect.bottom > window.innerHeight/2
-    );
-};
+body.addEventListener("scroll", id_check());
+
 
 function to_id(number){
     let i = 1;
@@ -73,10 +67,21 @@ function to_id(number){
     });
 };
 
-function copytext(element){
-    const text = element.getAttribute('title');
+function id_check(){
+    for (let i = 0; i<seiten.length; i++){
+        /*menu_buttons[i].classList.remove("on");*/
+        titel[i].classList.add("hidden");
 
-    navigator.clipboard.writeText(text);
+        if (is_in_viewport(seiten[i])){
+            /*menu_buttons[i].classList.add("on");*/
+            titel[i].classList.remove("hidden");
+        };
+    }
+}
 
-    return(text);
+function is_in_viewport(element){
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top < window.innerHeight/2 && rect.bottom > window.innerHeight/2
+    );
 };

@@ -14,9 +14,171 @@
 </head>
 
 <body onscroll="id_check()" id="body" style="display: grid;">
-    <header>
-        <h1 id="titel">Vinzenz Krüger</h1>
-        <div id="seiten" class="sections">
+    <header style="justify-content: right;">
+        <h1 class="titel">Vinzenz Krüger</h1>
+        <h1 class="titel">About Me</h1>
+        <h1 class="titel">Achievements</h1>
+        <h1 class="titel">Road to World Cup</h1>
+        <h1 class="titel">What I offer</h1>
+        <h1 class="titel">Partners</h1>
+        <h1 class="titel">Contact</h1>
+        <a title="Change Language" class="lang" href="deutsch.html" style="overflow: visible; z-index: 1;">🇩🇪</a>
+    </header>
+
+    <alert class="hidden">
+        <h2>Copied:</h2>
+        <p id="alert_text" style="color: var(--secondary-color);">a</p>
+    </alert>
+
+    <div class="seite hero">
+        <video class="bg-video" autoplay muted loop>
+            <source src="Maribor Gopro.mp4" type="video/mp4">
+        </video>
+
+        <p class="overlay">
+            "Hello,<br> my name is Vinzenz Krüger<br> and I am a <i>Downhill</i> <b>Racer</b>."
+        </p>
+    </div>
+
+    <div class="seite vorstellung">
+        <div style="top: 0; display: flex; justify-content: center; align-items: center;">
+            <img style="max-height: 80%; aspect-ratio: unset;" src="EM sitzen.jpeg"></img>
+        </div>
+
+        <div style="display: flex; flex-direction: column; top: 0; width: auto; justify-content: center; background-color: transparent; padding: 10px;">
+            <h2 style="justify-content: start;">I am</h2>
+            <ul>
+                <li>17 years old</li>
+                <li>🇩🇪 Vice-Champion U17 2025</li>
+                <li>going to race World Cups in 2027</li>
+                <li>living by: All or nothing!!!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="seite erfolge">
+        <button class="flip_chart" style="position: relative; background-image: url(Podium\ Spicak.webp); max-height: 90%;">
+            <jahr class="year">
+                Results<br>
+                2026 - U19 Pro
+                <!-- <i class="fa-regular fa-calendar"></i> -->
+            </jahr>
+            <p class="text hidden" style="position: absolute; top: 0; font-size: 2.5vw;">
+                <u>European Championship:</u> 17th<br>
+                <u>European DH Cup</u><br>
+                #3: 17.<br>
+                #4: 11.<br>
+                #5: 17. <br>
+                <u>IXS DH Cup</u><br>
+                #1: 9.<br>
+                #4: 🥈<br>
+                <u>French Cup</u><br>
+                #2: 12.<br>
+            </p>
+        </button>
+
+        <button class="flip_chart" style="position: relative; background-image: url(Ilmenau\ Stage\ dive.jpg); max-height: 90%;">
+            <jahr class="year">
+                Results<br>
+                2025 - U17 Pro
+                <!-- <i class="fa-regular fa-calendar"></i> -->
+            </jahr>
+
+            <p class="text hidden" style="position: absolute; top: 0; font-size: 2.5vw;">
+                <u>IXS DH Cup</u><br>
+                Overall: 🥈 <br>
+                #2: 🥈 <br>
+                #4: 🥈 <br>
+                #5: 🥉 <br>
+
+                <u>Rookies Cup</u><br>
+                Overall: 🥉 <br>
+                #2: 🥇 <br>
+                #5: 🥉 <br>
+
+                <u>European DH Cup</u><br>
+                #6: 20.
+            </p>
+        </button>
+    </div>
+
+    <div class="seite goals">
+        <div style="top: 0; display: flex; justify-content: center; align-items: center;">
+            <img style="max-height: 65%; aspect-ratio: unset;" src="Bellwald 1.jpg"></img>
+        </div>
+
+        <div style="display: flex; flex-direction: column; top: 0; justify-content: center; background-color: transparent; padding: 10px;">
+            <h2 style="justify-content: start;">Road to World Cup</h2>
+            <ul style="list-style-type: none;">
+                <li>✅ Podium on local races</li>
+                <li>✅ German Vice-Champion</li>
+                <li>✅ Gained experience internationally</li>
+                <li>✅ National team for European Champs</li>
+                <li>⏭️ World Cup</li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="seite sm">
+        <div style="max-height: 80%; top: 0; display: flex; justify-content: center;">
+            <video muted controls preload="auto" src="Schladders2.mov"></video>
+        </div>
+        <div style="max-height: 80%; top: 0; display: flex; justify-content: center;">
+            <video muted controls preload="auto" src="Ogau.mp4"></video>
+        </div>
+
+        <div class="icons">
+            <ul style="font-size: 5vh;">
+                <li>Visibility - Offline and Online</li>
+                <li>Social Media - Up to 17.000 Views/Post<f/li>
+                <li>Content</li>
+                <li>Product Feedback</li>
+            </ul>
+
+            <a class="contact-icons" href="https://www.instagram.com/vinzenz_kruger/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            
+            <a class="contact-icons" href="https://www.tiktok.com/@vinzenz_kruger">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="seite sponsoren">
+    
+        <div class="sponsorenliste">
+            <a class="sponsor" href="https://www.propain-bikes.com/">Propain Bicycles</a>
+            <a class="sponsor" href="https://radoxx.de/de/">Radoxx Components</a>
+            <a class="sponsor" href="https://www.bikepark-samerberg.de/">Bikepark Samerberg</a>
+            <a class="sponsor" href="https://www.pauls-suspension-lab.de/">Pauls Suspension Lab</a>
+            <a class="sponsor" href="https://www.maloja.com/">Maloja</a>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center; max-height: 80%; max-width: 60%; top: 0; overflow: hidden;">
+            <img id="profil" src="Profil.jpg">
+        </div>
+    </div>
+
+    <div class="seite contact">
+
+        <div style="display: flex; justify-content: center; align-items: center; max-height: 80%; max-width: 60%; top: 0; overflow: hidden;">
+            <img id="profil" src="EM zeigen.jpeg">
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; top: 0;">
+            <p><i class="fa-solid fa-phone"></i> +4915739070908</p>
+            <p><i class="fa-solid fa-envelope"></i> vinzenzkrueger@gmx.de</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!--
+<div id="seiten" class="sections">
             <button title="Home" onclick="to_id()" class="menu on">
                 <i class="fa-solid fa-house"></i>
             </button>
@@ -33,139 +195,4 @@
                 <i class="fa-solid fa-handshake-angle"></i>
             </button>
         </div>
-        <a title="Change Language" class="lang" href="deutsch.html" style="overflow: visible;">🇩🇪</a>
-    </header>
-
-    <alert class="hidden">
-        <h2>Copied:</h2>
-        <p id="alert_text" style="color: var(--secondary-color);">a</p>
-    </alert>
-
-    <div class="seite" style="display: flex; align-items: center; justify-content: center;">
-        <video class="bg-video" autoplay muted loop>
-            <source src="Maribor Gopro.mp4" type="video/mp4">
-        </video>
-
-        <p class="overlay">
-            "Hello,<br> my name is Vinzenz Krüger<br> and I am a <i>Downhill</i> <b>Racer</b>."
-        </p>
-    </div>
-
-    <div class="seite vorstellung">
-        <div style="top: 0; display: flex; justify-content: center; align-items: center;">
-            <img style="max-height: 80%; aspect-ratio: unset;" src="Kranskja Gora.JPG"></img>
-        </div>
-
-        <div style="display: flex; flex-direction: column; top: 0; width: auto; justify-content: center; background-color: transparent; padding: 10px;">
-            <h2 style="justify-content: start;">FACTS</h2>
-            <ul style="margin-left: 10px;">
-                <li>Mud conditions are the most fun</li>
-                <li>Setup is key</li>
-                <li>Motto: All or nothing!!!</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="seite erfolge">
-        <button class="flip_chart" style="position: relative; background-image: url(Bellwald\ 1.jpg); max-height: 90%;">
-            <jahr class="year">
-                Results<br>
-                2026 - U19 Pro
-                <!-- <i class="fa-regular fa-calendar"></i> -->
-            </jahr>
-            <p class="text hidden" style="position: absolute; top: 0; font-size: 2.5vw;">
-                <u>European Championship:</u> 17th<br>
-                <u>European DH Cup</u><br>
-                #1: 46. <br>
-                #3: 17.<br>
-                #4: 11.<br>
-                #5: 17. <br>
-                <u>IXS DH Cup</u><br>
-                #1: 9.<br>
-                #4: 2.<br>
-                <u>French Cup</u><br>
-                #2: 12.<br>
-            </p>
-        </button>
-
-        <button class="flip_chart" style="position: relative; background-image: url(Ilmenau\ Stage\ dive.jpg); max-height: 90%;">
-            <jahr class="year">
-                Results<br>
-                2025 - U17 Pro
-                <!-- <i class="fa-regular fa-calendar"></i> -->
-            </jahr>
-
-            <p class="text hidden" style="position: absolute; top: 0; font-size: 2.5vw;">
-                <u>IXS DH Cup</u><br>
-                Overall: 2. <br>
-                #2: 2. <br>
-                #4: 2. <br>
-                #5: 3. <br>
-
-                <u>Rookies Cup</u><br>
-                Overall: 3. <br>
-                #2: 1. <br>
-                #5: 3. <br>
-
-                <u>European DH Cup</u><br>
-                #6: 20.
-            </p>
-        </button>
-    </div>
-
-    <div class="seite sm">
-        <div style="max-height: 80%; top: 0; display: flex; justify-content: center;">
-            <video muted controls preload="auto" src="Schladders2.mov"></video>
-        </div>
-
-        <div class="icons">
-            <a class="contact-icons" href="https://www.instagram.com/vinzenz_kruger/">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            
-            <a class="contact-icons" href="https://www.tiktok.com/@vinzenz_kruger">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-            <a class="contact-icons copy" title="+49 1573 9070908" onclick="show_alert(this)">
-                <i class="fa-solid fa-phone"></i>
-            </a>
-            <a class="contact-icons copy" title="vinzenzkrueger@gmx.de" onclick="show_alert(this)">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="seite sponsoren" style="display: flex; justify-content: center; align-items: center;">
-        <!--
-       <div style="display: flex; flex-direction: column; top: 0; justify-content: center;">
-            <img src="Profil.jpg" style="max-width: 100%; height: 80%;">
-
-            <div class="kontakt-daten">
-                <p style="text-align:center; font-size:2vh; top: 10px;">
-                    <i class="fa-solid fa-phone"></i>
-                    +49 1573 9070908
-                </p>
-
-                <p style="text-align:center; font-size:2vh;">
-                    <i class="fa-solid fa-envelope"></i>
-                    vinzenzkrueger@gmx.de
-                </p>
-            </div>
-        </div> 
-    -->
-        <div class="sponsorenliste">
-            <h2 style="margin-bottom: 10px;">Sponsors</h2>
-            <a class="sponsor" href="https://www.propain-bikes.com/">Propain Bicycles</a>
-            <a class="sponsor" href="https://radoxx.de/de/">Radoxx Components</a>
-            <a class="sponsor" href="https://www.bikepark-samerberg.de/">Bikepark Samerberg</a>
-            <a class="sponsor" href="https://www.pauls-suspension-lab.de/">Pauls Suspension Lab</a>
-            <a class="sponsor" href="https://www.maloja.com/">Maloja</a>
-        </div>
-
-        <div style="display: flex; justify-content: center; align-items: center; max-height: 80%; max-width: 60%; top: 0; overflow: hidden;">
-            <img id="profil" src="Profil.jpg">
-        </div>
-    </div>
-
-</body>
-</html>
+-->
