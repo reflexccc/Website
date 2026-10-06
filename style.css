@@ -20,10 +20,20 @@
 ================================================== */
 
 :root {
-    --main-color:hsl(120, 20%, 7%);
-    --secondary-color: hwb(0 6% 49%);
-    --accent-1: hsl(0, 0%, 80%);
-    --accent-2: hsl(0, 0%, 100%);
+    --main-color:hsl(3, 62.5%, 6.27%);
+    --secondary-color: hsl(0, 0%, 85.1%);
+    --accent-1: hsl(0.54, 100%, 43.33%);
+    --accent-2: hsl(2.5, 73.47%, 19.22%, 0.9);
+
+    /*
+
+
+    BRAUN-BEIGE-ROT
+    --main-color:hsl(20.87, 48.94%, 9.22%);
+    --secondary-color: hsl(36.43, 37.33%, 70.59%);
+    --accent-1: hsl(356.6, 94.63%, 29.22%);
+    --accent-2: hsl(36.43, 37.33%, 70.59%, 0.2);
+    */
 }
 
 /* ==================================================
@@ -53,7 +63,7 @@ div{
 header{         
     width: 100vw;
     height: 10vh;
-    background-color: var(--accent-1);
+    background-color: var(--secondary-color);
     z-index: 2;
 
     gap: 0;
@@ -144,7 +154,8 @@ a{
     font-size: 4vw;
 
     background-color: var(--main-color);
-    color: var(--accent-1);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
 
     border-radius: 30px;
 
@@ -156,13 +167,13 @@ a{
 }
 
 a:hover{
-    color: var(--accent-2);
-    border: 4px solid var(--secondary-color);
+    color: var(--accent-1);
+    border: 4px solid var(--accent-1);
     animation: 0.3s bigger forwards ease-in-out;
 }
 
 .lang{
-    height: 60%;
+    height: 40%;
 
     aspect-ratio: 1;
     border-radius: 10px;
@@ -174,7 +185,12 @@ a:hover{
 
     background-color: var(--main-color);
     color: var(--accent-1);
-    border: 4px solid var(--accent-1);
+    border: 4px solid var(--main-color);
+}
+
+.lang:hover{
+    border-color: var(--accent-1);
+    animation: none;
 }
 
 /* ==================================================
@@ -189,9 +205,9 @@ h1{
     width: 100%;
     max-height: 10vh;
 
-    font-size: 4vw;
+    font-size: 5vw;
 
-    color: var(--secondary-color);
+    color: var(--accent-1);
 
     font-family: "Bowlby One SC";
 }
@@ -202,11 +218,25 @@ h2{
 
     width: 100%;
 
-    font-size: 5vw;
+    font-size: 4.5vw;
 
     color: var(--secondary-color);
 
     font-family: "Tourney";
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-height: vh;
+
+    font-size: 3vw;
+
+    color: var(--secondary-color);
+
+    font-family: "Bowlby One SC";
 }
 
 jahr{
@@ -217,13 +247,13 @@ jahr{
 }
 
 p{
-    color: var(--accent-1);
+    color: var(--secondary-color);
 
     font-size: 2.5vw;
 }
 
 ul{
-    color: var(--accent-1);
+    color: var(--secondary-color);
     font-size: 2.5vw;
 
     list-style-type: circle;
@@ -246,7 +276,7 @@ ul{
 
     text-decoration-color: var(--main-color);
     text-decoration-line: underline;
-    border: 4px solid transparent;
+    border: none;
 
     font-size: 3vw;
 }
@@ -270,7 +300,7 @@ img{
     aspect-ratio: 1;
     object-fit: cover;
 
-    box-shadow: 0 -5px 25px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 20px var(--accent-2);
 
     overflow: hidden;
 }
@@ -301,7 +331,7 @@ video{
 
     font-size: 4.5vw;
 
-    color: var(--accent-2); 
+    color: var(--secondary-color); 
     background: hsla(0, 0%, 0%, 0.67);
 
     text-align: center; 
@@ -326,7 +356,8 @@ video{
 }
 
 .contact-icons{
-    border: 4px solid var(--accent-1);
+    color: var(--accent-1);
+    border: 4px solid var(--secondary-color);
     border-radius: 30px;
     
     animation: none !important;
@@ -348,7 +379,7 @@ video{
 
     background-color: hsla(0, 0%, 0%, 0.45);
     background-blend-mode: darken;
-    border-color: var(--accent-2);
+    border-color: var(--secondary-color);
 
     overflow: hidden;
 
@@ -357,7 +388,7 @@ video{
 }
 
 .flip_chart:hover{
-    border-color: var(--secondary-color) !important;
+    border-color: var(--accent-1) !important;
 
     animation: bigger 0.7s forwards ease-in-out;
 }
@@ -368,7 +399,7 @@ video{
 
     backdrop-filter: blur(10px);
 
-    border-color: var(--accent-2);
+    border-color: var(--accent-1);
 }
 
 .text{
